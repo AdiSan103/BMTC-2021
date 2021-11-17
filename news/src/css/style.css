@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .vh-100-2 {
     min-height: 100vh;
 }
