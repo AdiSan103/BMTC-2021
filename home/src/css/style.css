@@ -227,11 +227,11 @@ body {
 }
 
 /* content4 */
-.content4 .card1{
+.content4 .card3{
     z-index: 1;
     padding: 25px;
 }
-.content4 .card1 svg {
+.content4 .card3 svg {
     z-index: -1;
     top: 50px;
     left: -6%;

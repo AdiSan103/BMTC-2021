@@ -11,8 +11,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- splide.js -->
     <link rel="stylesheet" href="src/splide-3.3.0/dist/css/splide.min.css">
-    <!-- css -->
-    <link rel="stylesheet" href="src/css/style.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
     <!-- font class -->
     <link rel="stylesheet" href="src/css/font.css">
+    <!-- my-css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- css animate -->
+    <link rel="stylesheet" href="src/css/animation.css">
 
     <title>Home Page</title>
 </head>
@@ -63,15 +65,16 @@
     <div class="banner">
         <div class="overlay-1">
             <div class="container vh-100-2 d-flex flex-column justify-content-center text-white">
-                <h3 class="montserratSemiBold600 ">Bli usernamenya</h3>
-                <h1 class="montserratBold900 ">BALAWAN</h1>
-                <p class="w-75 montserratExtraLight200">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h3 class="montserratSemiBold600 animate1 toUp">Bli usernamenya</h3>
+                <h1 class="montserratBold900 animate1 toUp">BALAWAN</h1>
+                <p class="w-75 montserratExtraLight200 animate1 toUp">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
                     Blanditiis iste obcaecati
                     accusamus rem
                     tempora
                     cupiditate aliquam sit maxime cumque magnam!</p>
                 <!-- button -->
-                <div class="button text-center">
+                <div class="button text-center animate1 toUp">
                     <div class="button-main">
                         <a href="#" class="montserratMedium500">Tentang Kami</a>
                     </div>
@@ -88,7 +91,7 @@
                 <div class="col-xl-6 col-12">
                     <!-- card -->
                     <div
-                        class="card1 d-flex flex-md-row flex-column gap-4 my-5 align-items-center align-items-md-start">
+                        class="card1 d-flex flex-md-row flex-column gap-4 my-5 align-items-center align-items-md-start animate1 toRight">
                         <img src="src/img/Asset 13.png" alt="img" class="w-100">
                         <div class="text-white">
                             <h4 class="montserratBold700">Berita Terbaru</h4>
@@ -102,7 +105,7 @@
                     </div>
                     <!-- card -->
                     <div
-                        class="card1 d-flex flex-md-row flex-column gap-4 my-5 align-items-center align-items-md-start">
+                        class="card1 d-flex flex-md-row flex-column gap-4 my-5 align-items-center align-items-md-start animate1 toRight">
                         <img src="src/img/Asset 13.png" alt="img" class="w-100">
                         <div class="text-white">
                             <h4 class="montserratBold700">Berita Terbaru</h4>
@@ -116,7 +119,7 @@
                     </div>
                     <!-- card -->
                     <div
-                        class="card1 d-flex flex-md-row flex-column gap-4 my-5 align-items-center align-items-md-start">
+                        class="card1 d-flex flex-md-row flex-column gap-4 my-5 align-items-center align-items-md-start animate1 toRight">
                         <img src="src/img/Asset 13.png" alt="img" class="w-100">
                         <div class="text-white">
                             <h4 class="montserratBold700">Berita Terbaru</h4>
@@ -129,7 +132,7 @@
                         </div>
                     </div>
                     <!-- berita lainnya -->
-                    <div class="position-relative">
+                    <div class="otherNews position-relative animate1 toRight">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293 45">
                             <defs>
                                 <style>
@@ -144,11 +147,12 @@
                                 </g>
                             </g>
                         </svg>
-                        <a href="#" class="button2 position-absolute montserratBold700 ">BERITA LAINNYA...</a>
+                        <a href="#" class="button2 position-absolute montserratBold700 ">BERITA
+                            LAINNYA...</a>
                     </div>
                 </div>
                 <!-- right -->
-                <div class="col">
+                <div class="rightContent col animate1 toLeft">
                     <h2 class="text-center text-white bg-2 montserratBold900">Hot News</h2>
                     <img src="src/img/Asset 12.png" alt="img" class="w-100">
                     <div class="bg-white">
@@ -180,8 +184,9 @@
                 <!-- left -->
                 <div
                     class="left col-md-6 col-12 position-relative d-flex justify-content-center mb-md-0 pb-md-0 pb-5 mb-5">
-                    <img src="src/img/Asset 7.png" alt="img" class="w-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.24 588.38" class="position-absolute">
+                    <img src="src/img/Asset 7.png" alt="img" class="w-100 animate1 toUp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.24 588.38"
+                        class="position-absolute animate1 toUp">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -199,14 +204,16 @@
                 <!-- right -->
                 <div class="right col-md-6 col-12 text-white mt-md-0">
                     <div>
-                        <h2 class="montserratBold900">SEJARAH BALAWAN</h2>
-                        <h5 class="montserratBold700Italic">"QUOTES QUOTES"</h5>
-                        <p class="montserratMedium500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                            assumenda autem esse facilis
-                            magnam deleniti quam fugit quas, ut modi.</p>
-                        <p class="montserratMedium500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                            assumenda autem esse facilis
-                            magnam deleniti quam fugit quas, ut modi.</p>
+                        <h2 class="montserratBold900 animate1 toRight">SEJARAH BALAWAN</h2>
+                        <h5 class="montserratBold700Italic animate1 fade1">"QUOTES QUOTES"</h5>
+                        <div class="montserratMedium500 animate1 fade1 paragraph">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                assumenda autem esse facilis
+                                magnam deleniti quam fugit quas, ut modi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                assumenda autem esse facilis
+                                magnam deleniti quam fugit quas, ut modi.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,10 +223,10 @@
     <!-- content3 -->
     <div class="bg-1">
         <div class="container content3 bg-1 vh-100-2 d-flex justify-content-center flex-column">
-            <h2 class="text-white mb-5 montserratBold900">OUR SERVICES</h2>
+            <h2 class="text-white mb-5 montserratBold900 animate1 toRight">OUR SERVICES</h2>
             <div class="row gap-md-0 gap-4">
-                <!-- card1 -->
-                <div class="col-xl-3 col-sm-6">
+                <!-- card2 -->
+                <div class="col-xl-3 col-sm-6 card2 animate1 toUp">
                     <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 148.97 115.85">
                         <defs>
@@ -252,8 +259,8 @@
                         Voluptatem,
                         reiciendis.</p>
                 </div>
-                <!-- card1 -->
-                <div class="col-xl-3 col-sm-6">
+                <!-- card2 -->
+                <div class="col-xl-3 col-sm-6 card2 animate1 toUp">
                     <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 148.97 115.85">
                         <defs>
@@ -286,8 +293,8 @@
                         Voluptatem,
                         reiciendis.</p>
                 </div>
-                <!-- card1 -->
-                <div class="col-xl-3 col-sm-6">
+                <!-- card2 -->
+                <div class="col-xl-3 col-sm-6 card2 animate1 toUp">
                     <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 148.97 115.85">
                         <defs>
@@ -320,8 +327,8 @@
                         Voluptatem,
                         reiciendis.</p>
                 </div>
-                <!-- card1 -->
-                <div class="col-xl-3 col-sm-6">
+                <!-- card3 -->
+                <div class="col-xl-3 col-sm-6 card2 animate1 toUp">
                     <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 148.97 115.85">
                         <defs>
@@ -361,10 +368,10 @@
     <!-- content4 -->
     <div class="bg-1">
         <div class="container content4 bg-1 vh-100-2 d-flex justify-content-center flex-column align-items-center py-5">
-            <h2 class="text-white montserratBold900">Our Course</h2>
+            <h2 class="text-white montserratBold900 animate1 fade1">Our Course</h2>
             <div class="d-flex row row-cols-xl-3 row-cols-sm-2 row-cols-1 justify-content-center align-items-center">
-                <!-- card -->
-                <div class="card1 col">
+                <!-- card3 -->
+                <div class="card3 col animate1 toUp">
                     <div class="position-relative">
                         <img src="src/img/Asset 16.png" alt="img" class="w-100">
                         <!-- desc -->
@@ -389,8 +396,8 @@
                         </svg>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card1 col">
+                <!-- card3 -->
+                <div class="card3 col animate1 toUp">
                     <div class="position-relative">
                         <img src="src/img/Asset 16.png" alt="img" class="w-100">
                         <!-- desc -->
@@ -415,8 +422,8 @@
                         </svg>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card1 col">
+                <!-- card3 -->
+                <div class="card3 col animate1 toUp">
                     <div class="position-relative">
                         <img src="src/img/Asset 16.png" alt="img" class="w-100">
                         <!-- desc -->
@@ -441,8 +448,8 @@
                         </svg>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card1 col">
+                <!-- card3 -->
+                <div class="card3 col animate1 toUp">
                     <div class="position-relative">
                         <img src="src/img/Asset 16.png" alt="img" class="w-100">
                         <!-- desc -->
@@ -467,8 +474,8 @@
                         </svg>
                     </div>
                 </div>
-                <!-- card -->
-                <div class="card1 col">
+                <!-- card3 -->
+                <div class="card3 col animate1 toUp">
                     <div class="position-relative">
                         <img src="src/img/Asset 16.png" alt="img" class="w-100">
                         <!-- desc -->
@@ -501,33 +508,42 @@
     <!-- galeri -->
     <div class="bg-1">
         <div class="container galeri vh-100-2 d-flex justify-content-center align-items-center flex-column">
-            <h2 class="text-center text-white montserratBold900">GALERI</h2>
+            <h2 class="text-center text-white montserratBold900 animate1 fade1">GALERI</h2>
             <div class="d-flex row row-cols-xl-3 row-cols-md-2 row-cols-1">
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 14.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 15.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 14.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 15.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 14.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 15.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 14.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 15.png" alt="img" class="w-100 p-2">
                 </div>
-                <div class="col d-flex align-items-center">
+                <!-- card4 -->
+                <div class="card4 animate1 toUp col d-flex align-items-center">
                     <img src="src/img/Asset 14.png" alt="img" class="w-100 p-2">
                 </div>
             </div>
@@ -537,9 +553,9 @@
     <!-- testimoni -->
     <div class="bg-1">
         <div class="container-md testimoni vh-100-2 d-flex justify-content-center align-items-center flex-column">
-            <h2 class="text-white text-center montserratBold900">Apa Kata Mereka?</h2>
+            <h2 class="text-white text-center montserratBold900 animate1 fade1">Apa Kata Mereka?</h2>
             <!-- main -->
-            <div>
+            <div class="testimoniMain animate1 toUp">
                 <div class="splide">
                     <div class="splide__track">
                         <ul class="splide__list d-flex align-items-center">
