@@ -168,6 +168,10 @@ body {
 }
 
 /* content1 */
+.content1 {
+    overflow-x: hidden;
+}
+
 .content1 .button {
     text-decoration: none;
     color: white;
