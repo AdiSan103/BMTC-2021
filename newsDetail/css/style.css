@@ -8,10 +8,13 @@
     max-width: 100px;
 }
 .navbar-title {
-    min-width: 60%;
+    min-width: 50%;
 }
 .navbar1-link {
-    min-width: 40%;
+    min-width: 45%;
+}
+.navbar-account {
+    min-width: 5%;
 }
 .navbar1-link ul{
     min-width: 100%;

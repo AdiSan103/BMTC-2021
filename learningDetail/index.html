@@ -23,11 +23,12 @@
 </head>
 
 <body>
+    <!-- nav -->
     <nav class="navbar1 d-flex flex-lg-row flex-column fixed-top w-100">
         <!-- navbar-left -->
         <div class="navbar-title d-flex align-items-center justify-content-between w-lg-50 ps-4 py-3">
             <!-- logo -->
-            <img src="img/BMTCLogoB-removebg-preview.png" alt="img" class="w-100 logo">
+            <img src="src/img/asdasd.png" alt="img" class="w-100 logo">
             <!-- seacrhing -->
             <form action="/" class="montserratMedium500">
                 <input type="text" placeholder="Tentang Balawan..">
@@ -38,16 +39,74 @@
                 <div class="hamburger-2"></div>
                 <div class="hamburger-3"></div>
             </div>
+            <!-- navbar-account -->
+            <div class="action d-lg-none d-block">
+                <a class="ps-4 d-flex gap-3 user-action dropdown dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                    role="button" aria-expanded="false">
+                    <!-- icon -->
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle"
+                        class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512" style="width: 25px; color:black">
+                        <path fill="currentColor"
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z">
+                        </path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" style="max-width: 50px;">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-cog"></i>
+                            <span class="ps-2">Pengaturan</span>
+                        </a>
+                    <li>
+                        <hr class="dropdown-divider">
+                    <li>
+                        <a class="dropdown-item text-danger" href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="ps-2">Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- navbar-right -->
         <div class="navbar1-link d-lg-flex d-none justify-content-lg-end">
             <ul
                 class="d-flex flex-lg-row flex-column justify-content-lg-end justify-content-evenly align-items-center pe-lg-4 py-3 montserratMedium500">
                 <li><a href="#" class="p-2">Home</a></li>
-                <li><a href="#" class="p-2">News</a></li>
-                <li><a href="#" class="p-2">Learning</a></li>
-                <li><a href="#" class="p-2">Testimoni</a></li>
+                <li><a href="../news/index.html" class="p-2">News</a></li>
+                <li><a href="index.html#course" class="p-2">Learning</a></li>
+                <li><a href="index.html#testimoni" class="p-2">Testimoni</a></li>
                 <li><a href="#" class="p-2">About</a></li>
+            </ul>
+        </div>
+        <!-- navbar-account -->
+        <div class="navbar-account action d-lg-flex d-none align-items-center">
+            <a class="ps-4 d-flex gap-3 user-action dropdown dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                role="button" aria-expanded="false">
+                <!-- icon -->
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle"
+                    class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512" style="width: 25px; color:black">
+                    <path fill="currentColor"
+                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z">
+                    </path>
+                </svg>
+            </a>
+            <ul class="dropdown-menu" style="max-width: 50px;">
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-cog"></i>
+                        <span class="ps-2">Pengaturan</span>
+                    </a>
+                <li>
+                    <hr class="dropdown-divider">
+                <li>
+                    <a class="dropdown-item text-danger" href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="ps-2">Log Out</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
