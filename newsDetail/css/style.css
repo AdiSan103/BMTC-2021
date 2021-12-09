@@ -55,19 +55,20 @@
     border-radius: 20px;
     padding: 7px 15px;
     transition: .25s;
+    width: 400px;
 }
 .navbar1 input:focus {
     transform: scale(1.05);
     box-shadow: 0px 0px 4px 2px rgba(3, 3, 3, 0.329);
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
     .navbar1 img.logo {
         max-width: 50px;
     }
 
     .navbar1 input {
         padding: 7px 15px;
-        width:190px;
+        width:200px;
     }
 }
 .hamburger-menu{
@@ -170,6 +171,30 @@
 }
 .right{
     color: white;
+}
+.content3 {
+    overflow-x: auto; 
+    white-space: inherit;
+}
+.content3 .card1 {
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.content3 .button {
+    text-decoration: none;
+    color: white;
+    border: 3px solid rgb(193,39,45);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .25s;
+    background: black;
+}
+
+.content3 .button:hover {
+    background: rgb(193,39,45);
+    border: none;
 }
 
 footer.row {
