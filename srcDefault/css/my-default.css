@@ -1,0 +1,20 @@
+body {
+    overflow-x: hidden;
+}
+
+.vh-100-2 {
+    min-height: 100vh;
+}
+
+.bg-1 {
+    background: #0E1028;
+    z-index: -2;
+}
+
+.bg-2 {
+    background: #D2003A;
+}
+
+.text-color-1 {
+    color: #D2003A;
+}
