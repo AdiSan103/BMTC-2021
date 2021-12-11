@@ -120,18 +120,20 @@
                         <div class="row">
                             <!-- left -->
                             <div class="col">
-                                <!-- no registrasi-->
-                                <div class="mb-3">
-                                    <fieldset disabled>
-                                        <label for="exampleInputEmail1" class="form-label">Nomor Registrasi</label>
-                                        <input type="number" class="form-control" id="exampleInputEmail1"
-                                            value="09865432">
-                                    </fieldset>
+                                <!-- studio -->
+                                <div class="col mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Nama Siswa</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>-- Pilih Satu --</option>
+                                        <option value="1">Made</option>
+                                        <option value="2">Ketut</option>
+                                        <option value="3">Wayan</option>
+                                    </select>
                                 </div>
                                 <!-- studio & tanggal mulai -->
                                 <div class="row">
                                     <!-- studio -->
-                                    <div class="col mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <fieldset disabled>
                                             <label for="exampleInputEmail1" class="form-label">Studio</label>
                                             <select class="form-select" aria-label="Default select example">
@@ -143,7 +145,7 @@
                                         </fieldset>
                                     </div>
                                     <!-- tanggal mulai -->
-                                    <div class="col mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <fieldset disabled>
                                             <label for="exampleInputEmail1" class="form-label">Tanggal Mulai</label>
                                             <input type="date" class="form-control" id="exampleInputEmail1"
@@ -153,15 +155,13 @@
                                 </div>
                                 <!-- paket khusus -->
                                 <div class="mb-3">
-                                    <fieldset disabled>
-                                        <label for="exampleInputEmail1" class="form-label">Paket Khusus</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Gitar Triwulan</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </fieldset>
+                                    <label for="exampleInputEmail1" class="form-label">Paket Khusus</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>-- Pilih Satu --</option>
+                                        <option value="1">Gitar Triwulan</option>
+                                        <option value="2">Band Music</option>
+                                        <option value="3">Group Band</option>
+                                    </select>
                                 </div>
                                 <!-- total biaya -->
                                 <label for="total">Total Biaya</label>
@@ -274,46 +274,41 @@
                             </div>
                             <!-- right -->
                             <div class="col">
-                                <!-- tanggal registrasi-->
+                                <!-- no registrasi-->
                                 <div class="mb-3">
                                     <fieldset disabled>
-                                        <label for="exampleInputEmail1" class="form-label">Tanggal Registrasi</label>
-                                        <input type="date" class="form-control" id="exampleInputEmail1"
-                                            value="09865432">
+                                        <label for="exampleInputEmail1" class="form-label">Nomor Registrasi</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            value="R-09865432">
                                     </fieldset>
                                 </div>
                                 <!-- hari & jam -->
                                 <div class="row">
                                     <!-- hari -->
-                                    <div class="col mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <fieldset disabled>
-                                            <label for="exampleInputEmail1" class="form-label">Tanggal
-                                                Registrasi</label>
-                                            <input type="date" class="form-control" id="exampleInputEmail1"
-                                                value="09865432">
+                                            <label for="exampleInputEmail1" class="form-label">Hari</label>
+                                            <input type="date" class="form-control" id="exampleInputEmail1">
                                         </fieldset>
                                     </div>
                                     <!-- jam -->
-                                    <div class="col mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <fieldset disabled>
-                                            <label for="exampleInputEmail1" class="form-label">Tanggal
-                                                Registrasi</label>
-                                            <input type="date" class="form-control" id="exampleInputEmail1"
-                                                value="09865432">
+                                            <label for="exampleInputEmail1" class="form-label">Jam</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                value="10:00">
                                         </fieldset>
                                     </div>
                                 </div>
                                 <!-- instruktur -->
                                 <div class="mb-3">
-                                    <fieldset disabled>
-                                        <label for="exampleInputEmail1" class="form-label">Instruktur</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Made Budi</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </fieldset>
+                                    <label for="exampleInputEmail1" class="form-label">Instruktur</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Made Budi</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -330,35 +325,94 @@
                             Bayar
                         </button>
                         <!-- Modal -->
-                        <div class="modal fade" id="submitToVirtualAccount" tabindex="-1"
+                        <div class="modal-card modal fade" id="submitToVirtualAccount" tabindex="-1"
                             aria-labelledby="submitToVirtualAccountLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header text-white mb-1">
                                         <div>
-                                            <h5 class="modal-title" id="submitToVirtualAccountLabel">Virtual Account
+                                            <h5 class="fw-bold modal-title" id="submitToVirtualAccountLabel">Virtual
+                                                Account
                                             </h5>
                                             <!-- text -->
-                                            <p class="col-8" style="font-size: 0.8rem;">Silahkan melanjutkan dengan
+                                            <p class="fw-bold fst-italic" style="font-size: 0.8rem;">Silahkan
+                                                melanjutkan
+                                                dengan
                                                 transfer ke Nomor Virtual
                                                 Account berikut :
                                             </p>
                                         </div>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
                                     </div>
-                                    <!-- form -->
-                                    <div class="modal-body">
-                                        <!-- Bank -->
+                                    <!-- main -->
+                                    <div class="modal-body bg-white rounded-3 modal-card-body text-white shadow">
+                                        <div class="d-flex justify-content-end">
+                                            <h2 class="fw-bold fs-1">BNI</h2>
+                                        </div>
                                         <div>
-                                            <!-- name -->
+                                            <!-- card number -->
                                             <div>
-
+                                                <p class="fw-bold fs-4">Nomor Rekening</p>
+                                                <h4>4111-0000-0000-0000</h4>
                                             </div>
                                         </div>
+                                        <div class="d-flex mt-5 justify-content-between">
+                                            <!-- Jumlah -->
+                                            <div>
+                                                <p class="fw-bold fs-4">Jumlah</p>
+                                                <h4>Rp 100.000,00</h4>
+                                            </div>
+                                            <!-- Berlaku -->
+                                            <div>
+                                                <p class="fw-bold fs-4">Berlaku s/d</p>
+                                                <!-- timer -->
+                                                <div class="d-flex gap-3">
+                                                    <!-- hari -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Hari</p>
+                                                    </div>
+                                                    <div>:</div>
+                                                    <!-- jam -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Jam</p>
+                                                    </div>
+                                                    <div>:</div>
+                                                    <!-- menit -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Menit</p>
+                                                    </div>
+                                                    <div>:</div>
+                                                    <!-- detik -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Detik</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- status -->
+                                        <div class="d-flex align-items-center">
+                                            <span class="fw-bold fs-4">Status : </span>
+                                            <span>Sedang Menunggu...</span>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <a class="btn btn-secondary" data-bs-dismiss="modal">Tutup</a>
+                                    <div class="modal-footer mt-1 justify-content-center position-relative">
+                                        <button type="button" class="button btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                                <path fill="currentColor"
+                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                                </path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
