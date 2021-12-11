@@ -2,19 +2,116 @@ body {
     overflow-x: hidden;
 }
 
+/* variabel */
+:root {
+    --clr1: #0E1028;
+    --clr2: #D2003A;
+    --clr3: #B2EA70;
+    --clr4: #32C1CD;
+    --clr5: #FBD148;
+    --clr6:  rgb(248, 123, 51);
+    --clr7: #C85C5C;
+}
+
+/* class public */
+.bg-danger-2 {
+    background: #C85C5C!important;
+}
+.bg-success-2 {
+    background: #B2EA70!important;
+}
+.bg-primary-dark {
+    background: #125de9!important;
+}
+.bg-primary-3 {
+    background: #32C1CD!important;
+}
+/* .bg-primary-2 {
+    background: #32c0cd1f!important;
+} */
+.bg-warning-2 {
+    background: #FBD148!important;
+}
+.bg-primary-2 {
+    background: rgb(248, 123, 51);
+}
+.btn-outline-primary-2 {
+    border: var(--clr4) 2px solid;
+    color: var(--clr4);
+    transition: 0.25s;
+    border-radius: 5px;
+}
+.btn-outline-primary-2:hover {
+    color: white;
+    background: var(--clr4);
+}
+.btn-danger-2 {
+    background: var(--clr2);
+    color: #ffffff;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+    border: solid 2px var(--clr2);
+}
+.btn-danger-2:hover {
+    color: var(--clr2);
+    background: #ffffff;
+    border: var(--clr2) 2px solid;
+}
+.btn-warning-2 {
+    background:var(--clr5);
+    color: #ffffff;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+    border: solid 2px var(--clr5);
+}
+.btn-warning-2:hover {
+    color:var(--clr5);
+    background: #ffffff;
+    border: var(--clr5) 2px solid;
+}
+.btn-primary-2 {
+    background:var(--clr4);
+    color: #ffffff;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+    border: solid 2px var(--clr4);
+}
+.btn-primary-2:hover {
+    color:var(--clr4);
+    background: #ffffff;
+    border: var(--clr4) 2px solid;
+}
+.b
+.vh-100-2 {
+    min-height: 100vh;
+}
+
 .vh-100-2 {
     min-height: 100vh;
 }
 
 .bg-1 {
-    background: #0E1028;
-    z-index: -2;
+    background-color: var(--clr1);
+}
+
+.clr-1 {
+    color: var(--clr1);
 }
 
 .bg-2 {
-    background: #D2003A;
+    background: var(--clr7);
 }
 
 .text-color-1 {
-    color: #D2003A;
+    color: var(--clr7);
+}
+
+.hover-fade {
+    transition: 0.25s;
+}
+.hover-fade:hover {
+    opacity: 0.8;
 }
