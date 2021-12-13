@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google-font Nunito  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!-- montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="src/css/font.css">
+    <!-- css default -->
+    <link rel="stylesheet" href="../../srcDefault/css/my-default.css">
+    <!-- navbar footer css -->
+    <link rel="stylesheet" href="../../srcDefault/css/navbarFooter.css">
+    <!-- font class -->
+    <link rel="stylesheet" href="../../srcDefault/css/font.css">
+    <!-- my-css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- css animate -->
+    <link rel="stylesheet" href="../../srcDefault/css/animation.css">
+
+    <title>Admin Template</title>
+</head>
+
+<body class="nunito">
+    <!-- nav -->
+    <nav class="montserratMedium500 navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../srcDefault/img/asdasd.png" alt="logo" style="max-width: 50px;">
+            </a>
+            <button onclick="hamburgerMenuClick()" class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="border:none;">
+                <span class="d-flex align-items-end flex-column">
+                    <div class="hamburger-1"></div>
+                    <div class="hamburger-2"></div>
+                    <div class="hamburger-3"></div>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../sudah-login/home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../sudah-login/news/index.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../sudah-login/home/index.html#course">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../sudah-login/home/index.html#testimmoni">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 mx-lg-3">
+                    <input class="form-control rounded-0" type="search" placeholder="Search"
+                        aria-label="Cari tentang balawan">
+                    <button class="rounded-0 btn btn-outline-danger" type="submit">Cari</button>
+                </form>
+                <div class="nav-item dropdown navbar-nav ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- icon -->
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle"
+                            class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512" style="width: 25px; color:black">
+                            <path fill="currentColor"
+                                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z">
+                            </path>
+                        </svg>
+                        <!-- name -->
+                        <span>Made Andi</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../calendar/index.html">Pembayaran</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="../../sebelum-login/home/index.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <div class=" d-flex bg-1 p-5 mt-5">
+        <!-- main-content -->
+        <div class="rounded-3 container vh-100-2 bg-white py-3 container-fluid">
+            <!-- main -->
+            <div class="main py-5 px-3">
+                <h1 class="h3">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle"
+                        class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" style="height: 2rem;">
+                        <path fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                        </path>
+                    </svg>
+                    <span class="fw-bold">Formulir Aktivitas</span>
+                </h1>
+                <!-- form -->
+                <div class="my-5">
+                    <form action="">
+                        <!-- top -->
+                        <div class="row">
+                            <!-- left -->
+                            <div class="col">
+                                <!-- studio -->
+                                <div class="col mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Nama Siswa</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>-- Pilih Satu --</option>
+                                        <option value="1">Made</option>
+                                        <option value="2">Ketut</option>
+                                        <option value="3">Wayan</option>
+                                    </select>
+                                </div>
+                                <!-- studio & tanggal mulai -->
+                                <div class="row">
+                                    <!-- studio -->
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <fieldset disabled>
+                                            <label for="exampleInputEmail1" class="form-label">Studio</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Studio Tersedia</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                    <!-- tanggal mulai -->
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <fieldset disabled>
+                                            <label for="exampleInputEmail1" class="form-label">Tanggal Mulai</label>
+                                            <input type="date" class="form-control" id="exampleInputEmail1"
+                                                value="22/04/2020">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <!-- paket khusus -->
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Paket Khusus</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>-- Pilih Satu --</option>
+                                        <option value="1">Gitar Triwulan</option>
+                                        <option value="2">Band Music</option>
+                                        <option value="3">Group Band</option>
+                                    </select>
+                                </div>
+                                <!-- total biaya -->
+                                <label for="total">Total Biaya</label>
+                                <div class="input-group mb-3 row col-2">
+                                    <fieldset disabled class="col pe-0">
+                                        <span class="input-group-text" style="border-radius: 5px 0px 0 5px;">$</span>
+                                    </fieldset>
+                                    <!-- input -->
+                                    <fieldset disabled class="col-7  p-0">
+                                        <input type="text" class="form-control" id="total" value="1000"
+                                            style="border-radius:0;">
+                                    </fieldset>
+                                    <!-- detail -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="col-3 btn bg-primary-3 text-white"
+                                        data-bs-toggle="modal" data-bs-target="#detailFormAktivitas"
+                                        style="border-radius: 0px 5px 5px 0px;">
+                                        Detail
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="detailFormAktivitas" tabindex="-1"
+                                        aria-labelledby="detailFormAktivitasLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="detailFormAktivitasLabel">Detail</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <!-- form -->
+                                                <form action="">
+                                                    <div class="modal-body">
+                                                        <fieldset disabled>
+                                                            <!-- biaya pendaftaran -->
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1" class="form-label">Biaya
+                                                                    Pendaftaran</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="exampleInputEmail1">
+                                                            </div>
+                                                            <!-- biaya kegiatan -->
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1" class="form-label">Biaya
+                                                                    Kegiatan</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="exampleInputEmail1">
+                                                            </div>
+                                                            <!-- biaya lainnya -->
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1" class="form-label">Biaya
+                                                                    Lainnya</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="exampleInputEmail1">
+                                                            </div>
+                                                            <!-- diskon -->
+                                                            <div class="input-group mb-3 row">
+                                                                <label for="diskon">
+                                                                    Diskon
+                                                                </label>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <div class="row">
+                                                                            <input type="number"
+                                                                                class="form-control col" id="diskon"
+                                                                                style="border-radius: 5px 0 0 5px;">
+                                                                            <span
+                                                                                class="input-group-text col-3 justify-content-center"
+                                                                                style="border-radius: 0 5px 5px 0 ;">%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <input type="number" class="form-control"
+                                                                            id="exampleInputEmail1">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jumlah total -->
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">Jumlah Total</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="exampleInputEmail1">
+                                                            </div>
+                                                            <!-- total dibayar -->
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1" class="form-label">Total
+                                                                    Dibayar</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="exampleInputEmail1">
+                                                            </div>
+                                                            <!-- sisa belum -->
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1" class="form-label">Sisa
+                                                                    Belum</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="exampleInputEmail1">
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-secondary" data-bs-dismiss="modal">Tutup</a>
+                                                        <button type="button"
+                                                            class="btn bg-primary-3 text-white">Simpan</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right -->
+                            <div class="col">
+                                <!-- no registrasi-->
+                                <div class="mb-3">
+                                    <fieldset disabled>
+                                        <label for="exampleInputEmail1" class="form-label">Nomor Registrasi</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            value="R-09865432">
+                                    </fieldset>
+                                </div>
+                                <!-- hari & jam -->
+                                <div class="row">
+                                    <!-- hari -->
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <fieldset disabled>
+                                            <label for="exampleInputEmail1" class="form-label">Hari</label>
+                                            <input type="date" class="form-control" id="exampleInputEmail1">
+                                        </fieldset>
+                                    </div>
+                                    <!-- jam -->
+                                    <div class="col-lg-6 col-12 mb-3">
+                                        <fieldset disabled>
+                                            <label for="exampleInputEmail1" class="form-label">Jam</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                value="10:00">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <!-- instruktur -->
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Instruktur</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Made Budi</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bottom -->
+                        <div>
+                            <!-- keterangan -->
+                            <label for="floatingTextarea2">Keterangan</label>
+                            <textarea class="form-control" placeholder="keterangan..." id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <!-- button tigger modal-->
+                            <button type="button" class="mt-3 col-3 btn bg-success-2 text-white rounded-3"
+                                data-bs-toggle="modal" data-bs-target="#submitToVirtualAccount">
+                                Bayar
+                            </button>
+                            <!-- button kembali -->
+                            <a href="../calendar/index.html" class="btn btn-outline-dark mt-3">
+                                <svg style="height: 1rem;" aria-hidden="true" focusable="false" data-prefix="fas"
+                                    data-icon="angle-double-left" class="svg-inline--fa fa-angle-double-left fa-w-14"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z">
+                                    </path>
+                                </svg>
+                                <span class="fw-bold">Kembali</span>
+                            </a>
+                        </div>
+                        <!-- Modal - bayar virtual card -->
+                        <div class="modal-card modal fade" id="submitToVirtualAccount" tabindex="-1"
+                            aria-labelledby="submitToVirtualAccountLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header text-white mb-1">
+                                        <div>
+                                            <h5 class="fw-bold modal-title" id="submitToVirtualAccountLabel">Virtual
+                                                Account
+                                            </h5>
+                                            <!-- text -->
+                                            <p class="fw-bold fst-italic" style="font-size: 0.8rem;">Silahkan
+                                                melanjutkan
+                                                dengan
+                                                transfer ke Nomor Virtual
+                                                Account berikut :
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- main -->
+                                    <div class="modal-body bg-white rounded-3 modal-card-body text-white shadow">
+                                        <div class="d-flex justify-content-end">
+                                            <h2 class="fw-bold fs-1">BNI</h2>
+                                        </div>
+                                        <div>
+                                            <!-- card number -->
+                                            <div>
+                                                <p class="fw-bold fs-4">Nomor Rekening</p>
+                                                <h4>4111-0000-0000-0000</h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-5 justify-content-between">
+                                            <!-- Jumlah -->
+                                            <div>
+                                                <p class="fw-bold fs-4">Jumlah</p>
+                                                <h4>Rp 100.000,00</h4>
+                                            </div>
+                                            <!-- Berlaku -->
+                                            <div>
+                                                <p class="fw-bold fs-4">Berlaku s/d</p>
+                                                <!-- timer -->
+                                                <div class="d-flex gap-3">
+                                                    <!-- hari -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Hari</p>
+                                                    </div>
+                                                    <div>:</div>
+                                                    <!-- jam -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Jam</p>
+                                                    </div>
+                                                    <div>:</div>
+                                                    <!-- menit -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Menit</p>
+                                                    </div>
+                                                    <div>:</div>
+                                                    <!-- detik -->
+                                                    <div class="d-flex 
+                                                    align-items-center flex-column">
+                                                        <span>00</span>
+                                                        <p>Detik</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- status -->
+                                        <div class="d-flex align-items-center">
+                                            <span class="fw-bold fs-4">Status : </span>
+                                            <span>Sedang Menunggu...</span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer mt-1 justify-content-center position-relative">
+                                        <button type="button" class="button btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                                <path fill="currentColor"
+                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-1 py-5" id="about">
+        <div class="footer container-xl row gap-lg-0 gap-5">
+            <div class="logo col-lg-3 col-12 d-flex justify-content-lg-start justify-content-center">
+                <img src="../../srcDefault/img/asdasd.png" alt="logo">
+            </div>
+            <div class="col-lg-2 col-12 d-flex flex-column align-items-center navigation">
+                <div class="d-flex flex-column align-items-lg-start align-items-center">
+                    <h5 class="text-white montserratBold700">NAVIGATION</h5>
+                    <div
+                        class="d-flex flex-column flex-row gap-lg-0 gap-2 montserratLight300 text-lg-start text-center">
+                        <a href="../../sudah-login/home/">Home</a>
+                        <a href="../../sudah-login/news/index.html">News</a>
+                        <a href="../../sudah-login/home/index.html#course">Course</a>
+                        <a href="../../sudah-login/home/index.html#testimoni">Testimoni</a>
+                        <a href="index.html#about">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 sosialMedia">
+                <h5 class="text-center text-white mb-4 montserratBold700">SOSIAL MEDIA</h5>
+                <div class="d-flex justify-content-evenly">
+                    <!-- instagram -->
+                    <a href="#">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                            class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- youtube -->
+                    <a href="#">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+                            class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- twitter -->
+                    <a href="#">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                            class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- facebook -->
+                    <a href="#">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                            class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 support">
+                <h4 class="text-center text-white  montserratBold700">SUPPPORT</h4>
+                <div class="d-flex align-items-center flex-column">
+                    <a href="#" class="montserratLight300">Fontawesome</a>
+                    <img src="../../srcDefault/img/Asset 8.png" alt="img">
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <p class="text-center text-white montserratLight300 pt-4">Copyright © 2021. All right reserved | support by GANA
+            IT
+            Consultant</p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- my default js -->
+    <script src="../../srcDefault/js/my-default.js"></script>
+    <!-- my js -->
+    <script src="src/js/script.js"></script>
+    <!-- navbar footer js -->
+    <script src="../../srcDefault/js/navbarFooter.js"></script>
+</body>
+
+</html>
