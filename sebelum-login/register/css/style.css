@@ -61,7 +61,8 @@ body{
   background-color: #0E1028 !important;
   border: 0px;
 }
-.form-box button[type="submit"]{
+.form-box button[type="submit"],
+.form-box a.button{
   margin-top: 10px;
   border: none;
   cursor: pointer;
@@ -74,7 +75,8 @@ body{
   transition: 0.5s;
   padding: 12px;
 }
-.form-box button[type="submit"]:hover{
+.form-box button[type="submit"]:hover,
+.form-box a.button:hover{
   background: #c72936;
 }
 .forget-link, .register-link{
